@@ -4,12 +4,14 @@ const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
 const terser = require('gulp-terser');
 const browsersync = require('browser-sync').create();
+const tailwindcss = require('tailwindcss');
+const autoprefixer = require('autoprefixer');
 
 // Sass Task
 function scssTask(){
   return src('app/scss/style.scss', { sourcemaps: true })
       .pipe(sass())
-      .pipe(postcss([cssnano()]))
+      .pipe(postcss([cssnano()], require('tailwindcss'), require('autoprefixer'),))
       .pipe(dest('dist', { sourcemaps: '.' }));
 }
 
