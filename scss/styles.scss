@@ -1,0 +1,41 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: TofinoBold;
+  src: url('../../assets/fonts/Tofino-UltraPersonal.ttf');
+}
+@font-face {
+  font-family: TofinoRegular;
+  src: url('../../assets/fonts/Tofino-RegularPersonal.ttf');
+}
+@font-face {
+  font-family: TofinoMedium;
+  src: url('../../assets/fonts/Tofino-Medium.otf');
+}
+body {
+  font-family: 'TofinoRegular';
+}
+.albion-text-bold,
+h1,h2,h3,h4,h5 {
+  font-family: 'TofinoBold';
+}
+
+.albion-text-medium {
+  font-family: 'TofinoMedium';
+}
+
+.bg-albion {
+  background-color: #242A44;
+}
+.text-albion {
+  color: #242A44;
+}
+.paragraph-albion {
+  color: #BAC2E8;
+}
+
+.backdrop-blur-custom {
+  backdrop-filter: blur(10px);
+}
