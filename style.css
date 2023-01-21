@@ -10,12 +10,20 @@
   font-family: TofinoRegular;
   src: url('Tofino-RegularPersonal.ttf');
 }
+@font-face {
+  font-family: TofinoMedium;
+  src: url('Tofino-Medium.otf');
+}
 body {
   font-family: 'TofinoRegular';
 }
 .albion-text-bold,
 h1,h2,h3,h4,h5 {
   font-family: 'TofinoBold';
+}
+
+.albion-text-medium {
+  font-family: 'TofinoMedium';
 }
 
 .bg-albion {
@@ -26,4 +34,8 @@ h1,h2,h3,h4,h5 {
 }
 .paragraph-albion {
   color: #BAC2E8;
+}
+
+.backdrop-blur-custom {
+  backdrop-filter: blur(10px);
 }
