@@ -30,7 +30,7 @@
           <nav class="relative flex items-center justify-between sm:h-18 lg:justify-start" aria-label="Global">
             <div class="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
               <div class="flex w-full items-center justify-between md:w-auto">
-                <a href="#home">
+                <a href="../">
                   <span class="sr-only">Action for albion</span>
                   <div/>
                   <img src="img/logo-png.png" width="80px">
@@ -42,7 +42,7 @@
             <div class="hidden md:ml-10 md:block md:space-x-8 md:pr-4">
               <a href="#home" class="font-medium text-white hover:text-white">Home</a>
 
-              <a href="#about" class="font-medium text-white hover:text-white">About us</a>
+              <a href="/timeline" class="font-medium text-white hover:text-white">Timeline</a>
 
               <a href="#contact" class="font-medium text-white hover:text-white">Contact us</a>
             </div>
@@ -130,33 +130,7 @@
   </div>
 </div>
 
-<div class="bg-white">
-  <div class="mx-auto max-w-6xl divide-y-2 divide-gray-200 py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-    <h2 class="text-3xl font-bold tracking-tight text-gray-900">Our approach</h2>
-    <div class="mt-6 pt-10">
-      <dl class="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-12 md:space-y-0">
-        <div>
-          <dt class="text-lg font-semibold leading-6 text-gray-900">How will you protest?</dt>
-          <dd class="mt-2 text-base text-gray-500">We will always protest peacefully and legally. We are not an angry mob and do not condone any form of violence, racism, homophobia, transphobia or misogyny from our members.</dd>
-        </div>
-        <div>
-          <dt class="text-lg font-semibold leading-6 text-gray-900">Can I help?</dt>
-          <dd class="mt-2 text-base text-gray-500">We are always looking for fans to join, please <a href="#contact" class="font-semibold text-gray-900 underline hover:text-gray-700">Contact Us</a> on the form below, or through <a href="">Twitter</a>, or <a href="">Facebook</a> to get involved.</dd>
-        </div>
-        <div>
-          <dt class="text-lg font-semibold leading-6 text-gray-900">When is your next protest?</dt>
-          <dd class="mt-2 text-base text-gray-500">We aim to regularly protest at both home and away matches. Follow our social accounts to see regular updates.</dd>
-        </div>
-        <div>
-          <dt class="text-lg font-semibold leading-6 text-gray-900">Won't protesting affect the team on the pitch?</dt>
-          <dd class="mt-2 text-base text-gray-500">We will never protest against the team and do not believe our protests will affect the team's performance in any way.</dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-</div>
-
-<div class="bg-white hidden" id="timeline">
+<div class="bg-white" id="timeline">
   <div class="mx-auto max-w-6xl py-16 px-4 sm:py-16 sm:px-6 lg:px-8">
     <h2 class="text-3xl font-bold tracking-tight text-gray-900 mb-10 relative">Timeline of events</h2>
         <ol class="relative border-l border-gray-200 dark:border-gray-700 max-w-4xl">                  
@@ -186,6 +160,32 @@
   </div>
 </div>
 
+
+<div class="bg-white">
+  <div class="mx-auto max-w-6xl divide-y-2 divide-gray-200 py-16 px-4 sm:py-16 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-bold tracking-tight text-gray-900">Our approach</h2>
+    <div class="mt-6 pt-10">
+      <dl class="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-12 md:space-y-0">
+        <div>
+          <dt class="text-lg font-semibold leading-6 text-gray-900">How will you protest?</dt>
+          <dd class="mt-2 text-base text-gray-500">We will always protest peacefully and legally. We are not an angry mob and do not condone any form of violence, racism, homophobia, transphobia or misogyny from our members.</dd>
+        </div>
+        <div>
+          <dt class="text-lg font-semibold leading-6 text-gray-900">Can I help?</dt>
+          <dd class="mt-2 text-base text-gray-500">We are always looking for fans to join, please <a href="#contact" class="font-semibold text-gray-900 underline hover:text-gray-700">Contact Us</a> on the form below, or through <a href="">Twitter</a>, or <a href="">Facebook</a> to get involved.</dd>
+        </div>
+        <div>
+          <dt class="text-lg font-semibold leading-6 text-gray-900">When is your next protest?</dt>
+          <dd class="mt-2 text-base text-gray-500">We aim to regularly protest at both home and away matches. Follow our social accounts to see regular updates.</dd>
+        </div>
+        <div>
+          <dt class="text-lg font-semibold leading-6 text-gray-900">Won't protesting affect the team on the pitch?</dt>
+          <dd class="mt-2 text-base text-gray-500">We will never protest against the team and do not believe our protests will affect the team's performance in any way.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
 
 <div class="relative bg-white mt-8" id="contact">
   <div class="absolute inset-0">
@@ -261,11 +261,6 @@
         });
     });
 });
-
-  if (window.location.href.indexOf("timelineOnHomepage") != -1) {
-    const el = document.querySelector('#timeline');
-    el.classList.remove("hidden");
-  }
 </script>
 </body>
 </html>
