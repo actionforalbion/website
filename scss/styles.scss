@@ -5,25 +5,19 @@
 @font-face {
   font-family: TofinoBold;
   src: url('../../assets/fonts/Tofino-UltraPersonal.ttf');
+  font-display: swap;
 }
 @font-face {
   font-family: TofinoRegular;
   src: url('../../assets/fonts/Tofino-RegularPersonal.ttf');
-}
-@font-face {
-  font-family: TofinoMedium;
-  src: url('../../assets/fonts/Tofino-Medium.otf');
+  font-display: swap;
 }
 body {
-  font-family: 'TofinoRegular';
+  font-family: "TofinoRegular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 .albion-text-bold,
 h1,h2,h3,h4,h5 {
-  font-family: 'TofinoBold';
-}
-
-.albion-text-medium {
-  font-family: 'TofinoMedium';
+  font-family: "TofinoBold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
 }
 
 .bg-albion {
