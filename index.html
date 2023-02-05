@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <meta property="og:title" content="Action For Albion" />
   <meta property="og:url" content="https://www.actionforalbion.co.uk" />
-  <link rel='stylesheet' href='./dist/output.css'>
-  <link rel="stylesheet" href="./dist/style.css">
+  <link rel='stylesheet' href='./dist/output.css' media="all">
+  <link rel="stylesheet" href="./dist/style.css" media="all">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,14 +22,7 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZH816YDCV"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-XZH816YDCV');
-  </script>
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-XZH816YDCV"></script>
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -265,7 +258,7 @@
     </div>
   </div>
 </div>
-<script>
+<script defer>
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -276,5 +269,11 @@
     });
 });
 </script>
+  <script defer>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XZH816YDCV');
+  </script>
 </body>
 </html>
