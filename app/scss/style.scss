@@ -1,33 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@font-face {
-  font-family: TofinoBold;
-  src: url('../../fonts/Tofino-UltraPersonal.ttf');
-}
-@font-face {
-  font-family: TofinoRegular;
-  src: url('../../fonts/Tofino-RegularPersonal.ttf');
-}
-@font-face {
-  font-family: TofinoMedium;
-  src: url('../../fonts/Tofino-Medium.otf');
-}
 body {
-  font-family: 'TofinoRegular', Helvetica Neue,Helvetica,Arial,sans-serif; ;
+  font-family: 'Inter', sans-serif;
 }
 .albion-text-bold,
 h1,h2,h3,h4,h5 {
-  font-family: 'TofinoBold', Helvetica Neue,Helvetica,Arial,sans-serif; ;
-}
-
-.albion-text-medium {
-  font-family: 'TofinoMedium', Helvetica Neue,Helvetica,Arial,sans-serif; ;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
 }
 
 .bg-albion {
@@ -43,3 +24,16 @@ h1,h2,h3,h4,h5 {
 .backdrop-blur-custom {
   backdrop-filter: blur(10px);
 }
+
+.btn-blue {
+  background: #2563eb;
+  color: white;
+  &:hover {
+    background: darken(#2563eb, 10%);
+    transition: background .2s ease;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
